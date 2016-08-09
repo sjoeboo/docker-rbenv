@@ -1,6 +1,6 @@
 FROM centos:7
 
-RUN yum -y install git gcc gcc-c++ make git bzip2 openssl-devel readline-devel zlib-devel && yum clean all
+RUN yum -y install git gcc gcc-c++ make git bzip2 openssl-devel readline-devel zlib-devel curl-devel && yum clean all
 
 RUN useradd -m -d /home/ruby -p ruby ruby && chsh -s /bin/bash ruby
 USER ruby
